@@ -1,17 +1,22 @@
 var modalOpen = document.querySelector(".modal-open");
 var mapOpen = document.querySelector(".map-open");
-var servicesButton = document.querySelectorAll(".services-item .button");
-var serviceSlide = document.querySelectorAll(".services-slide");
 
 var popup = document.querySelector(".modal-write-us");
 var popupMap = document.querySelector(".popup-map");
 
-var close = document.querySelector(".modal-close")
-var closeMap = document.querySelector(".modal-close-map")
+var close = document.querySelector(".modal-close");
+var closeMap = document.querySelector(".modal-close-map");
+
+var form = popup.querySelector("form");
+var login = popup.querySelector("[name=name]");
+var email = popup.querySelector("[name=email]");
+var letter = popup.querySelector("[name=latter]")
+
 
 modalOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  login.focus();
 });
 
 mapOpen.addEventListener("click", function (evt) {
@@ -29,30 +34,12 @@ closeMap.addEventListener("click", function (evt) {
   popupMap.classList.remove("modal-show");
 });
 
-servicesButton[0].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  for (var i = 0; i < 3; i++) {
-    servicesButton[i].classList.remove("current-button");
-    serviceSlide[i].classList.remove("services-slide-active");
-  };
-  servicesButton[0].classList.add("current-button");
-  serviceSlide[0].classList.add("services-slide-active");
+window.addEventListener ("keydown", function(evt){
+    if (evt.keyCode===27) {
+      evt.preventDefault;
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
 });
-servicesButton[1].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  for (var i = 0; i < 3; i++) {
-    servicesButton[i].classList.remove("current-button");
-    serviceSlide[i].classList.remove("services-slide-active");
-  };
-  servicesButton[1].classList.add("current-button");
-  serviceSlide[1].classList.add("services-slide-active");
-});
-servicesButton[2].addEventListener("click", function (evt) {
-  evt.preventDefault();
-  for (var i = 0; i < 3; i++) {
-    servicesButton[i].classList.remove("current-button");
-    serviceSlide[i].classList.remove("services-slide-active");
-  };
-  servicesButton[2].classList.add("current-button");
-  serviceSlide[2].classList.add("services-slide-active");
-});
+
