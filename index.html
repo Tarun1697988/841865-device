@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="format-detection" content="telephone=no">
 </head>
@@ -14,15 +14,19 @@
   <div class="container">
     <header class="main-header">
       <a class="main-header-logo">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="164" height="36" viewBox="0 0 164.000000 36.000000"
-          preserveAspectRatio="xMidYMid meet">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="164" height="36" viewBox="0 0 164.000000 36.000000" preserveAspectRatio="xMidYMid meet">
           <g transform="translate(0.000000,36.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-            <path d="M1165 342 c-70 -34 -105 -87 -105 -162 0 -75 35 -129 105 -161 66 -31 142 -19 197 30 l31 28 -36 22 -37 23 -26 -21 c-37 -29 -85 -27 -118 5 -37 38 -37 110 0 148 33 32 81 34 118 5 27 -21 28 -21 61 -3 32 17 33 20 21 39 -37 55 -143 79 -211 47z" />
-            <path d="M0 180 l0 -170 99 0 c107 0 140 13 185 73 30 41 30 153 0 194 -45 60 -78 73 -185 73 l-99 0 0 -170z m179 86 c93 -48 50 -186 -59 -186 l-30 0 0 100 0 100 30 0 c17 0 43 -6 59 -14z" />
-            <path d="M340 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z" />
-            <path d="M590 343 c0 -3 23 -80 52 -170 l52 -164 55 3 55 3 53 160 c28 88 52 164 52 168 1 4 -20 7 -46 5 l-47 -3 -28 -95 c-15 -52 -31 -102 -34 -110 -7 -17 -8 -15 -49 123 l-26 87 -45 0 c-24 0 -44 -3 -44 -7z" />
+            <path d="M1165 342 c-70 -34 -105 -87 -105 -162 0 -75 35 -129 105 -161 66 -31 142 -19 197 30 l31 28 -36 22 -37 23 -26 -21 c-37 -29 -85 -27 -118 5 -37 38 -37 110 0 148 33 32 81 34 118 5 27 -21 28 -21 61 -3 32 17 33 20 21 39 -37 55 -143 79 -211 47z"
+            />
+            <path d="M0 180 l0 -170 99 0 c107 0 140 13 185 73 30 41 30 153 0 194 -45 60 -78 73 -185 73 l-99 0 0 -170z m179 86 c93 -48 50 -186 -59 -186 l-30 0 0 100 0 100 30 0 c17 0 43 -6 59 -14z"
+            />
+            <path d="M340 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z"
+            />
+            <path d="M590 343 c0 -3 23 -80 52 -170 l52 -164 55 3 55 3 53 160 c28 88 52 164 52 168 1 4 -20 7 -46 5 l-47 -3 -28 -95 c-15 -52 -31 -102 -34 -110 -7 -17 -8 -15 -49 123 l-26 87 -45 0 c-24 0 -44 -3 -44 -7z"
+            />
             <path d="M930 180 l0 -170 45 0 45 0 0 170 0 170 -45 0 -45 0 0 -170z" />
-            <path d="M1420 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z" />
+            <path d="M1420 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z"
+            />
           </g>
         </svg>
       </a>
@@ -102,13 +106,13 @@
         <h2 class="visually-hidden">Лучшее предложение</h2>
         <div class="slider slide-one">
           <div class="slide-item">
-            <img src="img/slider-1.jpg" width="384" height="486" alt="Палка для селфи">
+            <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
           </div>
           <div class="slide-item">
             <span>01</span>
             <h2>Делай селфи,
               <br>как Бен Стиллер!</h2>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего
+            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
               5 килограмм.
             </p>
             <a class="button" href="#">Подробнее</a>
@@ -128,7 +132,7 @@
         </div>
         <div class="slider slide-two">
           <div class="slide-item">
-            <img src="img/slider-2.jpg" width="345" height="485" alt="Фитнес-браслет">
+            <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
           </div>
           <div class="slide-item">
             <span class="slide-number">02</span>
@@ -148,12 +152,13 @@
         </div>
         <div class="slider slide-three">
           <div class="slide-item">
-            <img src="img/slider-3.jpg" width="526" height="334" alt="Квадрокоптер">
+            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
           </div>
           <div class="slide-item">
             <span class="slide-number">03</span>
             <h2>Порхает как бабочка, жалит как пчела!</h2>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+            </p>
             <a class="button" href="#">Подробнее</a>
             <table class="slide-item-options">
               <tr>
@@ -173,37 +178,37 @@
         <ul class="popular-products-list">
           <li class="popular-products-item">
             <a class="popular-products-icon" href="catalog.html">
-              <img src="svg/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+              <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
             </a>
             <a href="catalog.html">Виртуальная реальность</a>
           </li>
           <li class="popular-products-item">
             <a class="popular-products-icon" href="catalog.html">
-              <img src="svg/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+              <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
             </a>
             <a href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="popular-products-item">
             <a class="popular-products-icon" href="catalog.html">
-              <img src="svg/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+              <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
             </a>
             <a href="catalog.html">Экшн-камеры</a>
           </li>
           <li class="popular-products-item">
             <a class="popular-products-icon" href="catalog.html">
-              <img src="svg/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+              <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
             </a>
             <a href="catalog.html">Фитнес-браслеты</a>
           </li>
           <li class="popular-products-item">
             <a class="popular-products-icon" href="#">
-              <img src="svg/popular-5.svg" width="56" height="98" alt="Умные часы">
+              <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
             </a>
             <a href="catalog.html">Умные часы</a>
           </li>
           <li class="popular-products-item">
             <a class="popular-products-icon" href="#">
-              <img src="svg/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+              <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
             </a>
             <a href="catalog.html">Квадрокоптеры</a>
           </li>
@@ -274,7 +279,8 @@
         <section class="about-us">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+          </p>
           <ul class="about-us-delivery">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
@@ -298,17 +304,21 @@
     <div class="container">
       <div class="footer-wrapper">
         <a class="footer-logo" href="index.html">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="164" height="36" viewBox="0 0 164.000000 36.000000"
-          preserveAspectRatio="xMidYMid meet">
-          <g transform="translate(0.000000,36.000000) scale(0.100000,-0.100000)" fill="#ffc600" stroke="none">
-            <path d="M1165 342 c-70 -34 -105 -87 -105 -162 0 -75 35 -129 105 -161 66 -31 142 -19 197 30 l31 28 -36 22 -37 23 -26 -21 c-37 -29 -85 -27 -118 5 -37 38 -37 110 0 148 33 32 81 34 118 5 27 -21 28 -21 61 -3 32 17 33 20 21 39 -37 55 -143 79 -211 47z" />
-            <path d="M0 180 l0 -170 99 0 c107 0 140 13 185 73 30 41 30 153 0 194 -45 60 -78 73 -185 73 l-99 0 0 -170z m179 86 c93 -48 50 -186 -59 -186 l-30 0 0 100 0 100 30 0 c17 0 43 -6 59 -14z" />
-            <path d="M340 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z" />
-            <path d="M590 343 c0 -3 23 -80 52 -170 l52 -164 55 3 55 3 53 160 c28 88 52 164 52 168 1 4 -20 7 -46 5 l-47 -3 -28 -95 c-15 -52 -31 -102 -34 -110 -7 -17 -8 -15 -49 123 l-26 87 -45 0 c-24 0 -44 -3 -44 -7z" />
-            <path d="M930 180 l0 -170 45 0 45 0 0 170 0 170 -45 0 -45 0 0 -170z" />
-            <path d="M1420 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z" />
-          </g>
-        </svg>
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="164" height="36" viewBox="0 0 164.000000 36.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,36.000000) scale(0.100000,-0.100000)" fill="#ffc600" stroke="none">
+              <path d="M1165 342 c-70 -34 -105 -87 -105 -162 0 -75 35 -129 105 -161 66 -31 142 -19 197 30 l31 28 -36 22 -37 23 -26 -21 c-37 -29 -85 -27 -118 5 -37 38 -37 110 0 148 33 32 81 34 118 5 27 -21 28 -21 61 -3 32 17 33 20 21 39 -37 55 -143 79 -211 47z"
+              />
+              <path d="M0 180 l0 -170 99 0 c107 0 140 13 185 73 30 41 30 153 0 194 -45 60 -78 73 -185 73 l-99 0 0 -170z m179 86 c93 -48 50 -186 -59 -186 l-30 0 0 100 0 100 30 0 c17 0 43 -6 59 -14z"
+              />
+              <path d="M340 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z"
+              />
+              <path d="M590 343 c0 -3 23 -80 52 -170 l52 -164 55 3 55 3 53 160 c28 88 52 164 52 168 1 4 -20 7 -46 5 l-47 -3 -28 -95 c-15 -52 -31 -102 -34 -110 -7 -17 -8 -15 -49 123 l-26 87 -45 0 c-24 0 -44 -3 -44 -7z"
+              />
+              <path d="M930 180 l0 -170 45 0 45 0 0 170 0 170 -45 0 -45 0 0 -170z" />
+              <path d="M1420 180 l0 -170 110 0 110 0 0 35 0 35 -65 0 -65 0 0 35 0 35 60 0 60 0 0 35 0 35 -60 0 -60 0 0 30 0 30 65 0 65 0 0 35 0 35 -110 0 -110 0 0 -170z"
+              />
+            </g>
+          </svg>
         </a>
         <ul class="user-navigation-footer">
           <li>
@@ -343,24 +353,24 @@
           <li>
             <a class="social-button" href="www.facebook.com">
               <span class="visually-hidden">Фейсбук</span>
-              <img src="svg/fb.svg" width="32" height="32" alt="Фейсбук">
+              <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
             </a>
           </li>
           <li>
             <a class="social-button" href="instagram.com">
               <span class="visually-hidden">Инстаграм</span>
-              <img src="svg/instagram.svg" width="32" height="32" alt="Инстаграм">
+              <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
             </a>
           </li>
           <li>
             <a class="social-button" href="twitter.com">
               <span class="visually-hidden">Твитер</span>
-              <img src="svg/twitter.svg" width="32" height="32" alt="Твитер">
+              <img src="img/twitter.svg" width="32" height="32" alt="Твитер">
             </a>
           </li>
         </ul>
         <a class="copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="svg/logo-html.svg" width="27" height="35" alt="htmlacademy.ru">
+          <img src="img/logo-html.svg" width="27" height="35" alt="htmlacademy.ru">
         </a>
       </div>
     </div>

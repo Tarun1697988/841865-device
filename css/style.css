@@ -145,7 +145,7 @@ input[type="radio"].visually-hidden {
     top: 8px;
     left: -35px;
 
-    background-image: url("../svg/search.svg");
+    background-image: url("../img/search.svg");
     background-repeat: no-repeat;
 }
 .header-seach-input[type="search"]::-webkit-search-decoration,
@@ -265,7 +265,7 @@ input[type="radio"].visually-hidden {
     top: 9px;
     left: -1px;
     
-    background-image: url("../svg/user.svg");
+    background-image: url("../img/user.svg");
     background-repeat: no-repeat;
 }
 
@@ -278,7 +278,7 @@ input[type="radio"].visually-hidden {
     top: 11px;
     left: 6px;
     
-    background-image: url("../svg/compare.svg");
+    background-image: url("../img/compare.svg");
     background-repeat: no-repeat;
 }
 
@@ -291,7 +291,7 @@ input[type="radio"].visually-hidden {
     top: 9px;
     left: 2px;
     
-    background-image: url("../svg/cart.svg");
+    background-image: url("../img/cart.svg");
     background-repeat: no-repeat;
 }
 
@@ -398,7 +398,7 @@ input[type="radio"].visually-hidden {
     right: -28px;
     opacity: 0.3;
 
-    background-image: url("../svg/plus.svg");
+    background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
 }
 
@@ -502,7 +502,11 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;
 
     z-index: 1;
+}
 
+.slide-two span::after,
+.slide-three span::after {
+    left: -310px;
 }
 
 .slide-item h2 {
@@ -525,6 +529,10 @@ input[type="radio"].visually-hidden {
     margin-top: 20px;
     margin-bottom: 42px;
     padding: 0;
+}
+
+.slide-one p{
+  width: 490px;
 }
 
 .slide-item-options {
@@ -1078,7 +1086,7 @@ input[type="radio"].visually-hidden {
     top: 12px;
     right: -20px;
 
-    background-image: url("../svg/nav-arrow.svg");
+    background-image: url("../img/nav-arrow.svg");
     background-repeat: no-repeat;
 
     opacity: 1;
@@ -1292,7 +1300,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-name {
-    
+ 
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -1300,8 +1308,17 @@ input[type="radio"].visually-hidden {
     letter-spacing: 0.3px;
 }
 
+.catalog-item:nth-of-type(2) .catalog-item-name {
+    width: 178px;
+}
+
+.catalog-item:nth-of-type(4) .catalog-item-name {
+    width: 230px;
+}
+
 .catalog-item-price {
-   
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -1323,6 +1340,7 @@ input[type="radio"].visually-hidden {
     background-color: rgba(238, 238, 238, 0.7);
 }
 
+
 .catalog-item-hover .button {
     margin-top: 180px;
 }
@@ -1332,6 +1350,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-hover a:last-of-type {
+    display: block;
+
     font-size: 13px;
     font-weight: 300;
 
@@ -1467,7 +1487,7 @@ input[type="radio"].visually-hidden {
 .range-controls {
     position: relative;
 
-    padding-bottom: 32px;
+    padding-bottom: 34px;
 }
 
 .range-controls .scale {
@@ -1559,7 +1579,7 @@ input[type="radio"].visually-hidden {
     top: 2px;
     left: -41px;
 
-    background-image: url("../svg/checkbox-off.svg");
+    background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
 }
 
@@ -1573,7 +1593,7 @@ input[type="radio"].visually-hidden {
     top: 2px;
     left: -41px;
 
-    background-image: url("../svg/checkbox-on.svg");
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
 }
 
@@ -1586,7 +1606,7 @@ input[type="radio"].visually-hidden {
     top: 2px;
     left: -41px;
 
-    background-image: url("../svg/radio-off.svg");
+    background-image: url("../img/radio-off.svg");
     background-repeat: no-repeat;
 }
 
@@ -1600,7 +1620,7 @@ input[type="radio"].visually-hidden {
     top: 2px;
     left: -41px;
 
-    background-image: url("../svg/radio-on.svg");
+    background-image: url("../img/radio-on.svg");
     background-repeat: no-repeat;
 }
 
@@ -2076,7 +2096,7 @@ input[type="radio"].visually-hidden {
 
     font-size: 0;
 
-    background-image: url("../svg/modal-close.svg");
+    background-image: url("../img/modal-close.svg");
     background-repeat: no-repeat;
     background-color:transparent;
     border: none;
