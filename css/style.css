@@ -1586,11 +1586,19 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:focus + label,
-.filter-input-checkbox:checked:focus + label,
-.filter-input-radio:focus + label,
-.filter-input-radio:checked:focus + label {
-  border: 1.5px solid #86a8df;
+.filter-input-checkbox:focus + label::after,
+.filter-input-checkbox:checked:focus + label::after,
+.filter-input-radio:focus + label::after,
+.filter-input-radio:checked:focus + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+
+  width: 164px;
+  height: 30px;
+
+  border: 1.5px solid #4cb5e696;
   border-radius: 5%;
 }
 
