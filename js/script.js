@@ -12,7 +12,6 @@ var login = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var letter = popup.querySelector("[name=letter]")
 
-
 modalOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
@@ -35,14 +34,14 @@ closeMap.addEventListener("click", function (evt) {
   popupMap.classList.remove("modal-show");
 });
 
-window.addEventListener ("keydown", function(evt){
-    if (evt.keyCode===27) {
-      evt.preventDefault;
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault;
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
+  }
 
 });
 
